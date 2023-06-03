@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+        {% for data in data %}
+       
+        <h1><font color='green'>SIR CV RAMAN INSTITUTE OF TECHNOLOGY & SCIENCE tadipatri</font></h1>
+        <h2><font color="red">Title B.Tech II year I mid examination result</font></h2>
+        
+        <h3><font color="blue">HallTicket Number </font>: {{data.name}}</h3>
+        <h3><font color="blue">Student Name</font> : {{data.htn}}</h3>
+        <table border="1">
+           <th>SI.NO</th> <th>Subject Code</th><th>Subject Name</th><th>Marks</th><th>Result Status</th>
+           <tr><td>1</td><td>20A54404</td><td>Deterministic & Stochastic Statistical Methods</td><td>{{data.mm}}</td><td>{{data.mres}}</td></tr>
+           <tr><td>2</td><td>20A52302</td><td>Organizational Behaviour</td><td>{{data.obm}}</td><td>{{data.obres}}</td></tr>
+           <tr><td>3</td><td>20A05402T</td><td>Operating System</td><td>{{data.osm}}</td><td>{{data.osre}}</td></tr>
+           <tr><td>4</td><td>20A05401T</td><td>Database Management System</td><td>{{data.dbmsm}}</td><td>{{data.dbmsres}}</td></tr>
+           <tr><td>5</td><td>20A05403T</td><td>Software Engineering</td><td>{{data.sem}}</td><td>{{data.seres}}</td></tr>
+       
+        </table>
+        
+        {% endfor %}
+        </center>
+    </body>
+</html>
